@@ -1,0 +1,9 @@
+:host {
+  .content {
+    border: 1px solid black;
+  }
+
+  &[is-active="false"] {
+    display: none;
+  }
+}

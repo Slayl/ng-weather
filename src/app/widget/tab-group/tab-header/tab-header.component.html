@@ -1,0 +1,13 @@
+@for (label of labels; track label; let index = $index) {
+<div
+  class="tab-header"
+  [class.active]="index === activeSelected"
+  (click)="onSelect.emit(index)"
+>
+  {{ label }}
+
+  <button class="close-btn" (click)="onClose.emit(index)">
+    <span>&times;</span>
+  </button>
+</div>
+}

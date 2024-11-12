@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  .tab-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: rgb(97, 122, 160);
+    color: white;
+    margin-right: 0.2rem;
+
+    .close-btn {
+      margin-left: 0.5rem;
+      cursor: pointer;
+      color: white;
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}

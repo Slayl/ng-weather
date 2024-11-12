@@ -1,0 +1,10 @@
+<app-tab-header
+  [labels]="labels()"
+  [activeSelected]="activeSelected()"
+  (onSelect)="onSelect($event)"
+  (onClose)="onClose.emit($event)"
+/>
+
+<div class="tab-content">
+  <ng-content select="app-tab"></ng-content>
+</div>
